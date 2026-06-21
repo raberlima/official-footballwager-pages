@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>专题索引 · 足球投注资料整理</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #f2f2f2;
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            color: #1e1e1e;
+            padding: 24px 20px 40px;
+        }
+
+        .page {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        /* hero 横幅 —— 简洁信息区 */
+        .hero {
+            background: #ffffff;
+            border-radius: 28px;
+            padding: 48px 36px 44px;
+            margin-bottom: 40px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.02), 0 2px 6px rgba(0,0,0,0.04);
+            border: 1px solid #e6e6e6;
+            transition: box-shadow 0.2s;
+        }
+
+        .hero h1 {
+            font-size: 2.6rem;
+            font-weight: 450;
+            letter-spacing: -0.01em;
+            margin-bottom: 12px;
+            color: #111;
+            line-height: 1.2;
+        }
+
+        .hero .sub {
+            font-size: 1.1rem;
+            color: #444;
+            border-left: 3px solid #a0a0a0;
+            padding-left: 18px;
+            margin-top: 10px;
+            margin-bottom: 16px;
+        }
+
+        .hero .meta-note {
+            font-size: 0.9rem;
+            color: #666;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px 30px;
+            margin-top: 16px;
+        }
+
+        .hero .meta-note span {
+            background: #f1f1f1;
+            border-radius: 30px;
+            padding: 4px 16px;
+            border: 1px solid #ddd;
+        }
+
+        /* 卡片通用 */
+        .card {
+            background: #ffffff;
+            border-radius: 24px;
+            padding: 32px 30px;
+            margin-bottom: 30px;
+            border: 1px solid #e2e2e2;
+            box-shadow: 0 6px 10px rgba(0,0,0,0.01), 0 1px 3px rgba(0,0,0,0.03);
+        }
+
+        .card h2 {
+            font-size: 1.8rem;
+            font-weight: 420;
+            margin-bottom: 18px;
+            letter-spacing: -0.3px;
+            color: #1a1a1a;
+            border-bottom: 1px solid #ececec;
+            padding-bottom: 10px;
+        }
+
+        .card h3 {
+            font-size: 1.2rem;
+            font-weight: 520;
+            margin-top: 24px;
+            margin-bottom: 8px;
+            color: #2a2a2a;
+        }
+
+        .card p {
+            margin-bottom: 16px;
+            color: #2c2c2c;
+            font-size: 1rem;
+        }
+
+        .card ul, .card ol {
+            padding-left: 1.4rem;
+            margin-bottom: 18px;
+            color: #2e2e2e;
+        }
+
+        .card li {
+            margin-bottom: 8px;
+        }
+
+        /* FAQ 摘要风格 */
+        .faq-item {
+            border-top: 1px solid #f0f0f0;
+            padding: 16px 0 8px;
+        }
+
+        .faq-item strong {
+            display: block;
+            font-weight: 550;
+            margin-bottom: 6px;
+            color: #1e1e1e;
+        }
+
+        .faq-item p {
+            margin-bottom: 0;
+            font-size: 0.95rem;
+        }
+
+        /* 页尾链接区 */
+        .footer-note {
+            margin-top: 48px;
+            text-align: center;
+            padding: 28px 20px 16px;
+            background: #f9f9f9;
+            border-radius: 40px;
+            border: 1px solid #e0e0e0;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+        }
+
+        .footer-note p {
+            font-size: 1rem;
+            color: #333;
+            max-width: 600px;
+            margin: 0 auto 12px;
+        }
+
+        .footer-note a {
+            color: #1f3a6b;
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px solid #bcc9e2;
+            transition: border-color 0.15s;
+        }
+
+        .footer-note a:hover {
+            border-bottom-color: #1f3a6b;
+        }
+
+        .signature-line {
+            color: #777;
+            font-size: 0.8rem;
+            margin-top: 20px;
+            letter-spacing: 1px;
+        }
+
+        /* 响应式细节 */
+        @media (max-width: 680px) {
+            body { padding: 16px 14px 32px; }
+            .hero { padding: 32px 20px; }
+            .hero h1 { font-size: 2rem; }
+            .card { padding: 24px 18px; }
+            .card h2 { font-size: 1.5rem; }
+            .hero .meta-note { flex-direction: column; gap: 10px; }
+        }
+
+        /* 极小屏幕时依然舒适 */
+        @media (max-width: 420px) {
+            .hero h1 { font-size: 1.7rem; }
+            .card h2 { font-size: 1.3rem; }
+        }
+
+        /* 细腻分隔 */
+        .divider-light {
+            height: 1px;
+            background: linear-gradient(to right, transparent, #d4d4d4, transparent);
+            margin: 10px 0 18px;
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+
+    <!-- 首页横幅 / hero 信息索引 -->
+    <div class="hero">
+        <h1>资料索引 · 足球投注</h1>
+        <div class="sub">信息整理 · 结构梳理 · 参考框架</div>
+        <p style="margin-top: 16px; max-width: 720px; color: #3a3a3a;">
+            本页围绕「足球投注」这一主题，从资料汇编与信息结构的角度，整合常见背景、逻辑节点与场景说明。不提供预测、不构成建议，仅作为信息索引与认知框架参考。
+        </p>
+        <div class="meta-note">
+            <span>📋 专题编号 · 49DF</span>
+            <span>⚽ 核心词：足球投注</span>
+            <span>📁 版本 · 索引结构</span>
+        </div>
+    </div>
+
+    <!-- 卡片1：背景与信息层次 -->
+    <div class="card">
+        <h2>一、主题背景与信息层次</h2>
+        <p>
+            在体育数据与博彩信息交叉的领域中，<strong>足球投注</strong>是一个高度结构化的分支。从联赛体系（英超、西甲、德甲、意甲、法甲等）到杯赛结构（欧冠、欧联、国内杯赛），每个层级都包含独立的数据流：赔率变动、球队状态、伤病记录、历史交锋、战术倾向等。
+        </p>
+        <p>
+            针对这些信息进行整理时，通常将数据划分为三个层次：<br>
+            <strong>① 基础层</strong> —— 联赛积分、赛程、阵容大名单；<br>
+            <strong>② 分析层</strong> —— 近期走势、主客场差异、进球分布、预期进球（xG）等统计；<br>
+            <strong>③ 参考层</strong> —— 市场赔率区间、交易量分布、专家意见摘要。
+        </p>
+        <p>
+            这种分层有助于快速定位资料缺口，避免信息过载。对于希望系统了解足球投注信息架构的人而言，建立这样的结构化视角比碎片化阅读更加有效。
+        </p>
+    </div>
+
+    <!-- 卡片2：典型应用场景与索引价值 -->
+    <div class="card">
+        <h2>二、典型场景与索引方式</h2>
+        <p>
+            在实际信息查阅中，足球投注相关的内容通常出现在以下几种场景：
+        </p>
+        <ul>
+            <li><strong>赛前资料准备：</strong> 收集对阵双方近5场数据、伤停情况、裁判风格、天气预告。这些要素构成了基础判断素材。</li>
+            <li><strong>赔率结构对比：</strong> 不同机构（如威廉希尔、365、澳门）开出的初始赔率与即时赔率之间的差异，往往反映市场情绪或关键信息变化。</li>
+            <li><strong>走势追踪：</strong> 某项投注选项（胜平负、让球、大小球）在特定周期内的热度变化，可辅助理解资金流动方向。</li>
+            <li><strong>复盘与记录：</strong> 赛后回顾实际结果与赛前信息的对应关系，有助于优化个人信息筛选习惯。</li>
+        </ul>
+        <p>
+            这些场景均不依赖单一来源，而是需要多渠道交叉验证。索引的价值在于：快速定位关键信息节点，减少在无关细节上的消耗。
+        </p>
+        <div class="divider-light"></div>
+        <h3>信息索引示例</h3>
+        <p style="font-size: 0.95rem; background: #f7f7f7; padding: 12px 16px; border-radius: 16px;">
+            <strong>结构：</strong> 联赛 → 轮次 → 对阵 → 数据面板（近况/交锋/赔率）<br>
+            <strong>聚合：</strong> 按日期、联赛、关注度排序，形成每日简报式索引。
+        </p>
+    </div>
+
+    <!-- 卡片3：FAQ 摘要 & 注意事项 -->
+    <div class="card">
+        <h2>三、常见疑问摘要（FAQ）</h2>
+        <div class="faq-item">
+            <strong>▎ 足球投注的信息来源应当如何筛选？</strong>
+            <p>优先选择具有公开数据接口或长期信誉的体育数据站，同时对比至少两个独立来源以降低偏差。避免仅依赖单一社媒或论坛内容。</p>
+        </div>
+        <div class="faq-item">
+            <strong>▎ 赔率变动是否一定反映真实信息？</strong>
+            <p>赔率变动受注资量、机构调整、突发事件等多重因素影响，不宜直接等同于“内幕消息”。最好将其作为市场情绪的一个参考维度。</p>
+        </div>
+        <div class="faq-item">
+            <strong>▎ 新手整理资料时最容易忽略什么？</strong>
+            <p>忽略时间维度。同一支球队在不同月份、不同赛事中的表现可能有显著差异。带有时间标签的数据才能真正用于对比分析。</p>
+        </div>
+        <div class="faq-item" style="border-bottom: 1px solid #f0f0f0; padding-bottom: 16px;">
+            <strong>▎ 如何判断一份资料索引的价值？</strong>
+            <p>好的索引应该具备：明确的分类逻辑、可复现的获取路径、以及适度的解释性标注。无须堆砌大量链接，重点是可操作和可理解。</p>
+        </div>
+    </div>
+
+    <!-- 页尾：自然嵌入链接 + 访问提示 -->
+    <div class="footer-note">
+        <p>
+            如果你希望进一步接触整合后的足球投注信息框架，可以了解 
+            <a href="https://official-footballwager.com">足球投注</a> 
+            这个主题站点所采用的结构化思路。页面以资料索引为出发点，不涉及投注指导或结果保证。
+        </p>
+        <p style="font-size: 0.9rem; color: #555; margin-top: 12px;">
+            ※ 本专题页仅供信息结构参考，不构成任何形式的建议。请保持理性判断。
+        </p>
+        <div class="signature-line">索引框架 · 49DF · 2025</div>
+    </div>
+
+</div>
+</body>
+</html>
